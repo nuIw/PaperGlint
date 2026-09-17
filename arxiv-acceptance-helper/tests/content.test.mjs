@@ -538,4 +538,7 @@ test("PaperGlint stays idle until its controls are opened", async () => {
   assert.match(source, /1FAIpQLSeOJJYTgYR0mPDoJMh8f1_SOzRItbLI_a0V325KRNgE-Y17ZQ\/viewform/);
   assert.match(source, /reportUrl\.searchParams\.set\("entry\.15985915", viewedPaper\.pageUrl\)/);
   assert.match(source, /header\.append\(refresh, report\)/);
+  assert.match(source, /Report issue opens Google Forms and sends this paper URL to Google/);
+  assert.match(source, /Opening either control sends paper metadata to external research services/);
+  assert.match(source, /Privacy policy ↗/);
 });

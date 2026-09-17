@@ -1,5 +1,16 @@
 # Verification Report
 
+## Store review preparation — 2026-09-17
+
+- Added visible notices for external metadata lookup and the Google Forms report
+  URL transfer, plus an in-product privacy policy link. Documented voluntary
+  reports, developer access, separate retention, and deletion requests.
+- Prepared a 440×280 promotional image and normalized the 128px square icon to
+  96px artwork with 16px transparent margins.
+- The public report form still displays `arXivLens Issue Report`; no connected
+  browser session was available to edit the form or inspect the store dashboard.
+  Owner-side tasks and real Chrome screenshot/test steps are in the submission guide.
+
 ## PaperGlint naming review — 2026-09-17
 
 - Updated the manifest name, launcher, extraction error, npm package name,

@@ -317,6 +317,7 @@ function sourceStatus(state, source, retryOpenReviewSession) {
       "ah-link",
     ));
     const retry = element("button", "ah-link-button", "Retry with OpenReview session");
+    retry.title = "Send this request to OpenReview using your existing OpenReview session cookies.";
     retry.type = "button";
     retry.addEventListener("click", retryOpenReviewSession);
     row.append(" · ", retry);
@@ -689,6 +690,7 @@ async function mount() {
     const report = safeLink(reportUrl.href, "Report issue", "ah-icon-button ah-report-link");
     report.dataset.focusKey = "report-issue";
     header.append(refresh, report);
+    header.append(element("p", "ah-muted", "Report issue opens Google Forms and sends this paper URL to Google. Only submit information you want the developer to read."));
     return header;
   }
 
@@ -767,7 +769,9 @@ async function mount() {
         if (state.analysisStatus === "idle") loadAnalysis();
       });
       summaryPanel.append(open);
+      summaryPanel.append(element("p", "ah-muted", "Opening either control sends paper metadata to external research services. Code & evidence also scans the PDF locally and searches GitHub with your permission."));
     }
+    summaryPanel.append(safeLink("https://github.com/nuIw/PaperGlint/blob/main/arxiv-acceptance-helper/PRIVACY.md", "Privacy policy ↗", "ah-link"));
     summary.app.replaceChildren(summaryPanel);
 
     const fragment = document.createDocumentFragment();
