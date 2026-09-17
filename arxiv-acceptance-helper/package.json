@@ -1,9 +1,9 @@
 {
-  "name": "arxiv-acceptance-helper",
+  "name": "paperglint",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "arXivLens: backend-free venue evidence, code discovery, and named PDF downloads.",
+  "description": "PaperGlint: backend-free venue evidence, code discovery, and named PDF downloads.",
   "scripts": {
     "vendor": "node scripts/vendor-pdfjs.mjs",
     "build": "npm run vendor && node scripts/validate-extension.mjs",

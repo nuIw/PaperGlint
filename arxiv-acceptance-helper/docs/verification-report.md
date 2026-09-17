@@ -1,7 +1,25 @@
 # Verification Report
 
+## PaperGlint naming review — 2026-09-17
+
+- Updated the manifest name, launcher, extraction error, npm package name,
+  packaging paths, README, privacy policy, and submission/design documentation.
+- `npm run package:extension` passed manifest/resource validation, syntax checks,
+  and all 165 tests. The generated `dist/paperglint-0.1.0.zip` was inspected:
+  its manifest and launcher use PaperGlint and its runtime text has no old brand name.
+- Storage keys, cache schema, DOM host IDs, permissions, and existing GitHub URLs
+  remain unchanged. The icon contains no brand text and needs no replacement.
+- Removed the orphaned `VenueTrace` gitlink: it had no `.gitmodules` URL and
+  was not used by the extension or packaging. The active extension remains in
+  `arxiv-acceptance-helper`; the optional-download-permission fix is preserved.
+- Chrome Web Store listings and the linked Google Form require owner-side
+  review; changing repository files does not update those external surfaces.
+- Live Chrome behavior was not exercised for this naming change.
+
+## Earlier functional verification
+
 **Date:** 2026-09-01
-**Project:** arXivLens
+**Project:** PaperGlint
 **Overall:** READY FOR MANUAL CHROME VALIDATION
 
 The version-drift, partial-source, DBLP retrieval, and author-comment changes
@@ -32,7 +50,7 @@ Chrome API lifecycle.
 
 ## Review-specific regression coverage
 
-- The user-triggered arXivLens launcher is inserted after `h1.title`; acceptance
+- The user-triggered PaperGlint launcher is inserted after `h1.title`; acceptance
   and PDF download controls replace it only after activation, while
   code links, source states, and all records are inserted immediately before
   `.bookmarks`; fixed minimum grid widths cannot push the download button out
@@ -191,7 +209,7 @@ documentation and were not rewritten as runtime architecture.
 
 - Load the directory unpacked and confirm panel placement on modern and legacy
   arXiv IDs.
-- Inspect DevTools Network before opening, after `Open arXivLens`, after
+- Inspect DevTools Network before opening, after `Open PaperGlint`, after
   `Code & evidence`, after OpenReview session retry, and after repeated panel opens.
 - Exercise DBLP-only, OpenReview Decision, official proceedings, no-result,
   challenge/rate-limit, and partial-failure states.

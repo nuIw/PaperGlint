@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "arXivLens",
+  "name": "PaperGlint",
   "version": "0.1.0",
   "description": "Research companion for venue evidence, code links, and named arXiv PDF downloads.",
   "icons": {

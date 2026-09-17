@@ -1,16 +1,28 @@
 # Chrome Web Store 제출 문안
 
+## 제품명 변경 시 확인
+
+- 스토어 표시 이름은 `PaperGlint`로 맞추고 설명, 스크린샷, 홍보 이미지에도 같은 이름을 사용합니다.
+- 기존 스토어 항목이 있다면 해당 항목을 업데이트하고, 업로드 전 `manifest.json`,
+  `package.json`, `package-lock.json`의 버전을 기존 게시 버전보다 높게 맞춥니다.
+- README와 개인정보처리방침을 GitHub에도 반영해야 공개 문서가 새 이름으로 표시됩니다.
+  저장소명 `paper_Lens`와 하위 폴더명은 실제 경로이므로 URL을 임의로 바꾸지 않습니다.
+- `Report issue`가 여는 Google Form의 제목과 설명은 폼 소유자 화면에서 별도로 확인합니다.
+  로컬 코드의 이름 변경은 외부 폼 내용을 바꾸지 않습니다.
+- 개발자 모드에서는 기존 설치 폴더에서 업데이트하고 확장 프로그램과 arXiv 탭을
+  새로고침합니다. 기존 설정을 유지하려면 확장 프로그램을 제거 후 재설치하지 않습니다.
+
 ## Single purpose
 
-arXivLens is an arXiv research companion that shows publication evidence and
+PaperGlint is an arXiv research companion that shows publication evidence and
 relevant code links and helps users save the current paper with a meaningful
 PDF filename.
 
 ## 설치 전 데이터 공개 문안
 
-arXivLens는 지원되는 arXiv abstract 페이지에서 UI를 표시하기 위해 논문 ID, URL,
+PaperGlint는 지원되는 arXiv abstract 페이지에서 UI를 표시하기 위해 논문 ID, URL,
 제목, 저자, Comments, DOI와 버전을 브라우저 안에서 읽습니다. 외부 조회는 사용자가
-`Open arXivLens` 또는 `Code & evidence`를 누른 뒤에만 시작합니다. 논문 게재 근거와
+`Open PaperGlint` 또는 `Code & evidence`를 누른 뒤에만 시작합니다. 논문 게재 근거와
 코드 저장소를 찾기 위해 필요한 최소 논문 정보를 DBLP, Crossref, Semantic Scholar,
 OpenReview, 공식 proceedings 및 사용자가 권한을 허용한 경우 GitHub API에 HTTPS로
 전송합니다. PDF 링크·텍스트는 `Code & evidence`를 누른 경우에만 브라우저 메모리에서
@@ -47,5 +59,5 @@ OpenReview, 공식 proceedings 및 사용자가 권한을 허용한 경우 GitHu
 npm run package:extension
 ```
 
-생성된 `dist/arxiv-lens-<version>.zip`만 업로드합니다. ZIP 루트에는
+생성된 `dist/paperglint-<version>.zip`만 업로드합니다. ZIP 루트에는
 `manifest.json`, `src/`, `vendor/`, `icons/`만 포함됩니다.
