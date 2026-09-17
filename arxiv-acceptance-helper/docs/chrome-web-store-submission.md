@@ -6,7 +6,7 @@
 - 기존 스토어 항목이 있다면 해당 항목을 업데이트하고, 업로드 전 `manifest.json`,
   `package.json`, `package-lock.json`의 버전을 기존 게시 버전보다 높게 맞춥니다.
 - README와 개인정보처리방침을 GitHub에도 반영해야 공개 문서가 새 이름으로 표시됩니다.
-  저장소명 `paper_Lens`와 하위 폴더명은 실제 경로이므로 URL을 임의로 바꾸지 않습니다.
+  공개 저장소는 `nuIw/PaperGlint`이며, 확장 프로그램 경로는 `arxiv-acceptance-helper`입니다.
 - `Report issue`가 여는 Google Form의 제목과 설명은 폼 소유자 화면에서 별도로 확인합니다.
   로컬 코드의 이름 변경은 외부 폼 내용을 바꾸지 않습니다.
 - 개발자 모드에서는 기존 설치 폴더에서 업데이트하고 확장 프로그램과 arXiv 탭을
@@ -39,7 +39,7 @@ OpenReview, 공식 proceedings 및 사용자가 권한을 허용한 경우 GitHu
   데이터로만 처리함
 - Limited Use certification: 모두 확인
 - Privacy policy URL:
-  `https://github.com/nuIw/paper_Lens/blob/main/arxiv-acceptance-helper/PRIVACY.md`
+  `https://github.com/nuIw/PaperGlint/blob/main/arxiv-acceptance-helper/PRIVACY.md`
 
 ## 권한 설명
 

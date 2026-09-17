@@ -18,7 +18,7 @@ PaperGlint는 arXiv 논문 페이지에서 학회 게재 정보와 근거를 확
 
 ## 설치
 
-1. 이 저장소를 내려받거나 clone합니다.
+1. [PaperGlint 저장소](https://github.com/nuIw/PaperGlint)를 내려받거나 `git clone https://github.com/nuIw/PaperGlint.git`으로 clone합니다.
 2. Chrome에서 `chrome://extensions`를 엽니다.
 3. 오른쪽 위의 **개발자 모드**를 켭니다.
 4. **압축해제된 확장 프로그램을 로드합니다**를 선택합니다.

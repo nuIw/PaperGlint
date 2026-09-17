@@ -61,4 +61,4 @@ PaperGlint의 정보 사용은 Chrome Web Store 사용자 데이터 정책과 Li
 정리합니다.
 
 개인정보 관련 문의는
-[PaperGlint GitHub Issues](https://github.com/nuIw/paper_Lens/issues)를 이용해 주세요.
+[PaperGlint GitHub Issues](https://github.com/nuIw/PaperGlint/issues)를 이용해 주세요.
