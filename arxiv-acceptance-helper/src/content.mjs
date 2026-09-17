@@ -356,7 +356,7 @@ async function mount() {
   try {
     viewedPaper = extractPaper(document, location);
   } catch (error) {
-    const failure = element("div", "ah-extraction-error", `arXivLens: ${error.message}`);
+    const failure = element("div", "ah-extraction-error", `PaperGlint: ${error.message}`);
     summary.app.append(failure);
     return;
   }
@@ -758,9 +758,9 @@ async function mount() {
     if (state.active) {
       summaryPanel.append(renderHeader(), renderDownload());
     } else {
-      const open = element("button", "ah-primary", "Open arXivLens");
+      const open = element("button", "ah-primary", "Open PaperGlint");
       open.type = "button";
-      open.dataset.focusKey = "open-arxiv-lens";
+      open.dataset.focusKey = "open-paperglint";
       open.addEventListener("click", () => {
         state.active = true;
         render();

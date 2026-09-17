@@ -1,11 +1,11 @@
 <div align="center">
-  <h1>arXivLens</h1>
+  <h1>PaperGlint</h1>
   <p>Conference evidence, code discovery, and named PDF downloads for arXiv</p>
 </div>
 
-arXivLens는 arXiv 논문 페이지에서 학회 게재 정보와 근거를 확인하고, 관련 코드 링크를 찾고, 읽기 쉬운 파일명으로 PDF를 저장할 수 있게 해주는 Chrome 확장 프로그램입니다.
+PaperGlint는 arXiv 논문 페이지에서 학회 게재 정보와 근거를 확인하고, 관련 코드 링크를 찾고, 읽기 쉬운 파일명으로 PDF를 저장할 수 있게 해주는 Chrome 확장 프로그램입니다.
 
-별도의 백엔드 서버나 arXivLens 계정 없이 동작하며, 외부 출처 조회는 사용자가 기능을 열거나 요청했을 때만 시작합니다.
+별도의 백엔드 서버나 PaperGlint 계정 없이 동작하며, 외부 출처 조회는 사용자가 기능을 열거나 요청했을 때만 시작합니다.
 
 ## 주요 기능
 
@@ -29,7 +29,7 @@ arXivLens는 arXiv 논문 페이지에서 학회 게재 정보와 근거를 확�
 ## 사용 방법
 
 1. `https://arxiv.org/abs/...` 형식의 논문 페이지를 엽니다.
-2. 논문 제목 아래의 **Open arXivLens**를 누릅니다.
+2. 논문 제목 아래의 **Open PaperGlint**를 누릅니다.
 3. 학회 게재 정보와 검증 상태를 확인합니다.
 4. 원하는 파일명을 선택하거나 수정한 뒤 **Download PDF**를 누릅니다.
 5. 코드 링크와 세부 근거가 필요하면 페이지 하단의 **Code & evidence**를 엽니다.
@@ -48,7 +48,7 @@ arXivLens는 arXiv 논문 페이지에서 학회 게재 정보와 근거를 확�
 | `Conflicting` | 같은 학회와 연도에 서로 다른 최종 decision이 발견됨 |
 | `Unverified` | 해당 항목을 확인할 충분한 근거가 없음 |
 
-arXivLens는 `Identity`, `Decision`, `Track`을 독립적으로 표시합니다. 검색 후보가 발견됐다는 이유만으로 현재 논문의 게재 상태를 자동 확정하지 않습니다.
+PaperGlint는 `Identity`, `Decision`, `Track`을 독립적으로 표시합니다. 검색 후보가 발견됐다는 이유만으로 현재 논문의 게재 상태를 자동 확정하지 않습니다.
 
 ## 데이터 출처
 

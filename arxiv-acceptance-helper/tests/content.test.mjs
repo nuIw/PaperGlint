@@ -519,10 +519,10 @@ test("record UI keeps low-identity results visible but separate from matched evi
   assert.match(source, /fallbackNotice/);
 });
 
-test("arXivLens stays idle until its controls are opened", async () => {
+test("PaperGlint stays idle until its controls are opened", async () => {
   const source = await readFile(new URL("../src/content.mjs", import.meta.url), "utf8");
   const css = await readFile(new URL("../src/panel.css", import.meta.url), "utf8");
-  assert.match(source, /Open arXivLens/);
+  assert.match(source, /Open PaperGlint/);
   assert.match(source, /summaryPanel\.append\(renderHeader\(\), renderDownload\(\)\)/);
   assert.match(source, /Code & evidence/);
   assert.match(source, /REQUEST_GITHUB_ACCESS/);

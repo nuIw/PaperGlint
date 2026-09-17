@@ -1,4 +1,4 @@
-# arXivLens Design
+# PaperGlint Design
 
 **Date:** 2026-08-24  
 **Status:** Approved for implementation  
@@ -45,7 +45,7 @@ unchanged.
 
 ### Placement and lifecycle
 
-An `Open arXivLens` control renders directly below the paper title and above the
+An `Open PaperGlint` control renders directly below the paper title and above the
 authors. Publication analysis and the acceptance/PDF controls remain inactive
 until the user opens this surface or `Code & evidence`.
 
